@@ -1,0 +1,72 @@
+
+AI Overview
+To set an API key in your terminal, choose the instructions for your operating system and whether you want a temporary (current session only) or permanent fix.
+Replace YOUR_API_KEY_NAME with the required variable name (e.g., OPENAI_API_KEY, ANTHROPIC_API_KEY) and your_actual_key_here with your secret key. 
+
+https://www.google.com/search?q=set+api+key+in+terminal&rlz=1C1VDKB_enUS1078US1080&oq=set+API+Key&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyDwgAEAAYFBiHAhiABBi0BzIGCAEQRRg5MgoIAhAAGIAEGLQHMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgoICRAAGIAEGLQH0gEKMTc1NzBqMGoxNagCCLACAfEFWGsIf_akG7c&sourceid=chrome&source=chrome.rb&ie=UTF-8
+
+OpenAI Developers
+ +1
+💻 macOS & Linux
+Most modern Macs use Zsh, while Linux usually defaults to Bash.
+Temporary (Resets when you close the terminal)
+Run this command directly in your terminal: 
+bash
+export YOUR_API_KEY_NAME="your_actual_key_here"
+Use code with caution.
+Permanent (Persists across restarts)
+To save it so you don't have to re-enter it every time, add it to your shell profile configuration file: 
+
+OpenAI Developers
+ +1
+For Zsh (Default macOS):
+bash
+echo 'export YOUR_API_KEY_NAME="your_actual_key_here"' >> ~/.zshrc
+source ~/.zshrc
+Use code with caution.
+For Bash (Default Linux):
+bash
+echo 'export YOUR_API_KEY_NAME="your_actual_key_here"' >> ~/.bashrc
+source ~/.bashrc
+Use code with caution.
+🪟 Windows
+Choose the method based on which terminal tool you are actively using. 
+
+www.anaconda.com
+PowerShell
+Temporary:
+powershell
+$env:YOUR_API_KEY_NAME="your_actual_key_here"
+Use code with caution.
+Permanent:
+powershell
+[System.Environment]::SetEnvironmentVariable('YOUR_API_KEY_NAME', 'your_actual_key_here', 'User')
+Use code with caution.
+(Note: You will need to restart your PowerShell window for the permanent change to apply). 
+
+Claude Help Center
+ +1
+Command Prompt (CMD)
+Temporary:
+cmd
+set YOUR_API_KEY_NAME=your_actual_key_here
+Use code with caution.
+Permanent:
+cmd
+setx YOUR_API_KEY_NAME "your_actual_key_here"
+Use code with caution.
+(Note: You will need to restart your CMD window for the permanent change to apply). 
+
+Claude Help Center
+🔍 How to Verify It Worked
+To check if the terminal successfully registered your variable, print its value: 
+
+Medium
+ +1
+macOS / Linux: echo $YOUR_API_KEY_NAME
+Windows PowerShell: echo $env:YOUR_API_KEY_NAME
+Windows CMD: echo %YOUR_API_KEY_NAME% 
+If it prints your key back to you, you are ready to go! 
+
+Medium
+Which specific tool or platform (e.g., OpenAI, Anthropic, AWS) are you setting up this key for? If you let me know, I can give you the exact variable name and verification steps for that service.

@@ -1,6 +1,3 @@
-# MCP_Advanced_Topics
-MCP_Advanced_Topics
-
 # MCP Logging and Progress Demo
 
 ## Setup
